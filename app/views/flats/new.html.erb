@@ -1,0 +1,6 @@
+<%= form_with(model: @flat, local: true) do |form| %>
+  <%= render 'form', form: form %>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

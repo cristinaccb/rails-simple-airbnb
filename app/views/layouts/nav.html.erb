@@ -1,0 +1,10 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <%= link_to "Airbnb Clone", root_path, class: "navbar-brand" %>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <%= link_to "Home", root_path, class: "nav-item nav-link" %>
+      <%= link_to "Browse Flats", flats_path, class: "nav-item nav-link" %>
+      <%= link_to "My Listings", user_flats_path(current_user), class: "nav-item nav-link" if user_signed_in? %>
+    </div>
+  </div>
+</nav>
